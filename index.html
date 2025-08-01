@@ -1,75 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shree Raghavendra Tirtha Hitech Borewells</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Raghavendra Tirtha Hitech Borewells and Power Drills</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #083d77;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      padding: 10px 0;
+    }
+    .gallery img {
+      height: 200px;
+      border-radius: 8px;
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .testimonial-card {
+      background: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <img src="images/srtr.jpg" alt="Logo" class="logo" />
-    <div class="contact-buttons">
-      <a href="tel:7483810902" class="call-button">📞 Call Us</a>
-      <a href="https://wa.me/917483810902" target="_blank" class="whatsapp-button">💬 WhatsApp</a>
-    </div>
-  </header>
-
-  <section class="about">
+  <div class="section">
     <h2>🛠️ Who Are We?</h2>
-    <p>Shree Raghavendra Tirtha Hitech Borewells and Power Drills is a trusted name in borewell drilling and groundwater solutions, serving residential, agricultural, and commercial needs with advanced technology and years of field expertise.</p>
-    <p>We specialize in:</p>
-    <ul>
-      <li>✅ Deep borewell drilling for homes, farms, apartments, and industries</li>
-      <li>✅ Site inspection and borewell point selection by experienced geologists</li>
-      <li>✅ High-pressure drilling rigs for all terrain types</li>
-      <li>✅ Pump installation, maintenance, and servicing</li>
-      <li>✅ Water yield testing and groundwater consultation</li>
-    </ul>
-  </section>
-
-  <section class="services">
-    <h2>💧 How Can We Help You?</h2>
-    <ul>
-      <li>🔹 New Borewell Drilling</li>
-      <li>🔹 Site & Groundwater Surveys</li>
-      <li>🔹 Pump Installation</li>
-      <li>🔹 Old Borewell Cleaning & Flushing</li>
-      <li>🔹 Borewell Extension</li>
-      <li>🔹 Emergency Services</li>
-    </ul>
-    <div class="service-images">
-      <img src="images/lorry.jpg" alt="Service Vehicle 1">
-      <img src="images/lorry2.jpg" alt="Service Vehicle 2">
-      <img src="images/lorry6.jpg" alt="Service Vehicle 3">
-      <img src="images/machine2.jpg" alt="Service Rig">
-      <img src="images/set.jpg" alt="Setup">
+    <div class="card">
+      <p>Shree Raghavendra Tirtha Hitech Borewells and Power Drills is a trusted name in borewell drilling and groundwater solutions, serving residential, agricultural, and commercial needs with advanced technology and years of field expertise.</p>
+      <p>We specialize in:</p>
+      <ul>
+        <li>✅ Deep borewell drilling for homes, farms, apartments, and industries</li>
+        <li>✅ Site inspection and borewell point selection by experienced geologists</li>
+        <li>✅ High-pressure drilling rigs for all terrain types</li>
+        <li>✅ Pump installation, maintenance, and servicing</li>
+        <li>✅ Water yield testing and groundwater consultation</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
-  <section class="testimonials">
-    <h2>💬 What Our Customers Says about us</h2>
-    <blockquote>“Quick and professional service. Highly recommended!” – Geetha</blockquote>
-    <blockquote>“They arrived on time and did a great job with the new borewell.” – Yashvanth</blockquote>
-    <blockquote>“Excellent customer support and clear communication.” – Rajshekar</blockquote>
-    <blockquote>“Affordable pricing and great results. Thank you!” – Harish</blockquote>
-  </section>
+  <div class="section">
+    <h2>💧 How Can We Help You?</h2>
+    <div class="card">
+      <ul>
+        <li>New Borewell Drilling: Precision drilling using advanced rigs for any soil type or depth</li>
+        <li>Site & Groundwater Surveys: Expert site inspection and scientific bore point selection</li>
+        <li>Pump Installation: Submersible and jet pump fitting with complete plumbing setup</li>
+        <li>Old Borewell Cleaning & Flushing: Restore water flow and remove blockages or silt</li>
+        <li>Borewell Extension: Deepen your existing borewell to reach new water sources</li>
+        <li>Emergency Services: Fast support for bore failure, motor issues, or dry borewells</li>
+      </ul>
+    </div>
+  </div>
 
-  <section class="hours">
+  <div class="section">
+    <h2>🚛 Our Service Vehicles</h2>
+    <div class="gallery">
+      <img src="images/lorry.jpg" alt="Service Vehicle">
+      <img src="images/machine2.jpg" alt="Service Equipment">
+      <img src="images/lorry6.jpg" alt="Service Lorry">
+      <img src="images/lorry2.jpg" alt="Service Van">
+      <img src="images/set.jpg" alt="Rig Setup">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>💬 What Our Customers Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <strong>Geetha</strong>
+        <p>“Quick response and very professional team. The borewell was done with care and precision.”</p>
+      </div>
+      <div class="testimonial-card">
+        <strong>Yashvanth</strong>
+        <p>“Reliable and on-time service. Highly recommend them for any water drilling needs.”</p>
+      </div>
+      <div class="testimonial-card">
+        <strong>Rajshekar</strong>
+        <p>“Their expertise helped us find a good water source. Great equipment and staff!”</p>
+      </div>
+      <div class="testimonial-card">
+        <strong>Harish</strong>
+        <p>“Efficient borewell service. They even handled pump installation perfectly.”</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
     <h2>🕒 Business Hours</h2>
-    <p>Sunday – Saturday: 7:00am – 10:00pm</p>
-  </section>
+    <div class="card">
+      <p>Sunday – Saturday: <strong>7:00am – 10:00pm</strong></p>
+    </div>
+  </div>
 
-  <section class="booking">
-    <h2>📋 Book Now</h2>
-    <form action="https://formsubmit.co/shreeraghavendratirtha@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+  <div class="section">
+    <h2>📞 Book Now</h2>
+    <div class="card">
+      <form action="https://formsubmit.co/shreeraghavendratirtha@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <input type="text" name="phone" placeholder="Phone Number" required><br><br>
+        <textarea name="message" placeholder="Your Requirement" required></textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <a href="tel:7483810902" style="position:fixed;bottom:20px;left:20px;background:#0a66c2;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;z-index:1000;">Call Us</a>
+  <a href="https://wa.me/917483810902" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;z-index:1000;">Chat on WhatsApp</a>
 </body>
 </html>
